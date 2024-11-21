@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.game-container {
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #555;
+}
+
+.choices {
+  margin-bottom: 20px;
+}
+/*  */
+.choice {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1rem;
+  color: #fff;
+  background: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.choice:hover {
+  background: #0056b3;
+  transform: scale(1.1);
+}
+
+.cheat {
+  background: #28a745;
+}
+
+.cheat:hover {
+  background: #1c7430;
+}
+
+.results {
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.results p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.results span {
+  font-weight: bold;
+  animation: highlight 0.5s ease-in-out;
+}
+
+.random-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.dice {
+  width: 100px;
+  height: 100px;
+  background: #ddd;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: #555;
+  animation: shake 0.8s infinite ease-in-out;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+}
+
+/* Keyframes for button fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Keyframes for results slide-in */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Keyframes for text highlight */
+@keyframes highlight {
+  from {
+    color: #555;
+  }
+  to {
+    color: #ff5722;
+  }
+}
