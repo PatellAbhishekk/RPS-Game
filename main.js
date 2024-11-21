@@ -1,3 +1,4 @@
+// Variables and Constants
 const choices = ["rock", "paper", "scissors"];
 const icons = {
   rock: "🪨",

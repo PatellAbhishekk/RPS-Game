@@ -1,10 +1,16 @@
+/* google-fonts */
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Atma:wght@300;400;500;600;700&family=Playwrite+DE+Grund:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: Arial, sans-serif;
   text-align: center;
   background-color: #f4f4f9;
   color: #333;
-  margin: 0;
-  padding: 0;
+  font-family: "Atma";
 }
 
 .game-container {
@@ -25,7 +31,7 @@ h1 {
 .choices {
   margin-bottom: 20px;
 }
-/*  */
+/* turns */
 .choice {
   padding: 10px 20px;
   margin: 10px;
