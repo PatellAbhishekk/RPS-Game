@@ -3,15 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RPS || Game</title>
-    <!-- favicon -->
+    <title>Rock Paper Scissors</title>
+    <!-- Favicon -->
     <link rel="shortcut icon" href="Assests/RPS.png" type="image/x-icon" />
-
-    <!-- Style -->
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- container -->
     <div class="game-container">
       <h1>Rock, Paper, Scissors</h1>
       <div class="choices">
@@ -21,16 +18,14 @@
         <button class="choice cheat" onclick="playGame('bomb')">Bomb</button>
       </div>
       <div class="results">
-        <p id="user-choice">You chose: <span></span></p>
+        <p id="user-choice">You choose: <span></span></p>
         <div class="random-container">
           <div class="dice" id="dice"></div>
-          <p id="computer-choice">Computer chose: <span></span></p>
+          <p id="computer-choice">Computer choose: <span></span></p>
         </div>
         <p id="winner">Result: <span></span></p>
       </div>
     </div>
-
-    <!-- Script -->
-    <script src="src/script.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
