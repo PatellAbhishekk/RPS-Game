@@ -13,18 +13,24 @@
   <body>
     <!-- container -->
     <div class="game-container">
-        <h1>Rock, Paper, Scissors</h1>
-        <div class="choices">
-          <button class="choice" onclick="playGame('rock')">Rock</button>
-          <button class="choice" onclick="playGame('paper')">Paper</button>
-          <button class="choice" onclick="playGame('scissors')">Scissors</button>
-          <button class="choice cheat" onclick="playGame('bomb')">Bomb</button>
+      <h1>Rock, Paper, Scissors</h1>
+      <div class="choices">
+        <button class="choice" onclick="playGame('rock')">Rock</button>
+        <button class="choice" onclick="playGame('paper')">Paper</button>
+        <button class="choice" onclick="playGame('scissors')">Scissors</button>
+        <button class="choice cheat" onclick="playGame('bomb')">Bomb</button>
+      </div>
+      <div class="results">
+        <p id="user-choice">You chose: <span></span></p>
+        <div class="random-container">
+          <div class="dice" id="dice"></div>
+          <p id="computer-choice">Computer chose: <span></span></p>
         </div>
-        <div class="results">
-            <p id="user-choice">You chose: <span></span></p>
-            <div class="random-container">
-              <div class="dice" id="dice"></div>
-              <p id="computer-choice">Computer chose: <span></span></p>
-            </div>
+        <p id="winner">Result: <span></span></p>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="src/script.js"></script>
   </body>
 </html>
